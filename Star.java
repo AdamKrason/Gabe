@@ -11,6 +11,11 @@ class Star{
         effectiveTemp = starTemp;
     }
 
+    public String toString(){
+        return "Stjernen " + name + " har radiusen " + radius + " km, og massen " + 
+                mass + " kg. Den har en effektiv temperatur paa " + effectiveTemp + " grader.";
+    }
+
     public String getName(){
         return name;
     }

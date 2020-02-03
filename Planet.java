@@ -9,6 +9,10 @@ class Planet{
         mass = planetMass;
     }
 
+    public String toString(){
+        return "Planeten " + name + " har radiusen " + radius + " km, og massen " + mass + " kg.";
+    }
+
     public String getName(){
         return name;
     }

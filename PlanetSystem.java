@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 class PlanetSystem{
     private String name;
@@ -8,6 +8,12 @@ class PlanetSystem{
     public PlanetSystem(String psName, Star psCenterStar){
         name = psName;
         centerStar = psCenterStar;
+    }
+
+    public String toString(){
+
+        return "Solsystemet " + name + " har hovedstjernen " + centerStar.getName()
+                + " og planetene" + (Planet[]) planets.toArray();
     }
 
     public String getName(){
